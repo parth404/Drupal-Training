@@ -1,0 +1,30 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/base/base.css: {}
+      css/base/fonts.css: {}
+site-body:
+  css:
+    component:
+      css/sitebody.css: {}
+site-container:
+  css:
+    component:
+      css/site-container.css: {}
+site-logo:
+  css:
+    component:
+      css/sitelogo.css: {}
+site-header:
+  css:
+    component:
+      css/site-header.css: {}
+main-menu:
+  css:
+    component:
+      css/main-menu.css: {}
+hero-content:
+  css:
+    component:
+      css/hero-content.css: {}

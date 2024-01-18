@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Olivero's theme override to display the header region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{{attach_library('olivero_sub/site-header')}}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    layout ? 'layout--' ~ layout|clean_class,
+    'site-header'
+  ]
+%}
+
+<div class="site-header" data-drupal-selector="header-nav-overlay">
+{{ content }}
+
+</div>

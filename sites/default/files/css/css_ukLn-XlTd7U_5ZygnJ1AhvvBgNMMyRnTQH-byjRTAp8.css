@@ -1,0 +1,3 @@
+.site-header{display:flex;justify-content:space-between;width:100%;background-color:blueviolet;}
+.menu-items ul{display:flex;color:red;list-style:none;gap:10px;}
+.site-logo{padding-top:20px;}.site-logo p{color:red;text-align:center;}

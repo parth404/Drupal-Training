@@ -1,0 +1,4 @@
+.site-header{display:flex;justify-content:space-between;align-items:center;width:100%;}
+.menu-items ul{display:flex;list-style:none;gap:30px;}
+.site-logo p{text-align:center;}
+.site-container{max-width:1440px;margin:auto;color:black;}
