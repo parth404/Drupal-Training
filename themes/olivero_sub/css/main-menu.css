@@ -2,4 +2,6 @@
     display: flex;
     list-style: none;
     gap: 60px;
+    text-align: left;
+    margin-right: 50px;
 }

@@ -41,7 +41,7 @@
   ]
 %}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-    <div class="menu-items">
+    <div>
         <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
         {# Label. If not displayed, we still provide it for screen readers. #}
         {% if not configuration.label_display %}
@@ -52,8 +52,10 @@
         {{ title_suffix }}
 
         {# Menu. #}
+        <div class="menu-items">
         {% block content %}
             {{ content }}
         {% endblock %}
+        </div>
         </nav>
     </div>

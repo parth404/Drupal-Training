@@ -3,13 +3,10 @@
 {{attach_library('olivero_sub/hero-content')}}
 {%
   set classes = [
-    'hero-content', 
     'section-container',
-    'hero-image'
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  <div class="section-container"></div>
     <div class="hero-content">
       <h1>A Digital Product Agency</h1>
       <p>
@@ -17,11 +14,17 @@
         expertise. We build readymade websites, mobile applications,
         and elaborate online business services.
       </p>
+      <button class="cta-contact-now">
+        <div class="contact-now">Contact Now</div>
+      </button>
     </div>
-    <img
-      class="hero-image"
-      loading="eager"
-      alt=""
-      src="./public/image-8@2x.png"
-    />
+    <div class="frame">
+      <div class="rectangle-1"></div>
+      <img
+        class="hero-image"
+        loading="eager"
+        alt=""
+        src="./public/image-8@2x.png"
+      />
+    </div>
 </div>
